@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script src="libs/angular.min.js"></script>
+    <script src="javascripts/ex4.js"></script>
+
+    <div ng-controller="CommonController">
+        <div ng-controller="Controller1">
+            <p>{{greeting.text}}, Angular</p>
+            <button ng-click="test1()">test1</button>
+        </div>
+        <div ng-controller="Controller2">
+            <p>{{greeting.text}}, Angular</p>
+            <button ng-click="test2()">test2</button>
+            <button ng-click="commonFn()">Common in controller2</button>
+        </div>
+        <button ng-click="commonFn()">Common</button>
+
+    </div>
+
+</body>
+</html>

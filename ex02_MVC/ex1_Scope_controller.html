@@ -1,0 +1,23 @@
+<html ng-app>
+<body>
+
+
+    <script src="libs/angular.min.js"></script>
+    <script src="javascripts/ex1.js"></script>
+
+
+    <div class="show-cope-demo">
+        <div ng-controller="GreetCtrl">
+            Hello{{name}} !
+        </div>
+        <div ng-controller="ListCtrl">
+            <ol>
+                <li ng-repeat="name in name">
+                    {{name}} from {{department}}
+                </li>
+            </ol>
+        </div>
+</div>
+</body>
+
+</html>
